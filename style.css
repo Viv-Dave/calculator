@@ -1,18 +1,38 @@
 /* Style here */
+.body {
+    font-family: "VT323", monospace;
+}
 .screen {
     background-color: rgb(246, 72, 246);
     width: 250px;
     height: 80px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
     display: flex;
     justify-content: right;
     align-items: last baseline; 
-    font-size: 40px;
+    font-size: 50px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+    border-radius: 5px;
+    caret-color: transparent;
 }
 .icons {
     display: flex;
-
+    font-size: 10px;
+    gap: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-weight: bolder;
+    caret-color: transparent;
+}
+.biggerscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(246, 72, 246);
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
 }
 .clearbutton {
     height: 50px;
@@ -23,6 +43,7 @@
     background-color: rgb(61, 61, 61);
     color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    caret-color: transparent;
 }
 .upperoperations-btn {
     height: 50px;
@@ -33,6 +54,7 @@
     background-color: rgb(61, 61, 61);
     color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    caret-color: transparent;
 }
 .horizontal-container {
     height: 50px;
@@ -42,7 +64,6 @@
     align-items: center;
     flex-direction: row;
     gap: 5px;
-    margin-top: 5px;
 }
 .grid-container {
     display: grid;
@@ -52,14 +73,6 @@
     height: 190px;
     gap: 5px;
     margin-right: 5px;
-}
-.grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-weight: bold;
-    caret-color: transparent;
 }
 .my-div {
     width: 100%;
@@ -101,6 +114,7 @@
     color: white;
     font-weight: bold;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    caret-color: transparent;
 }
 .num-btn:hover {
     background-color:  rgb(41, 41, 41);
@@ -117,12 +131,14 @@
     background-color: rgb(31, 31, 31); /* Example background color */
     padding: 10px;
     border-radius: 10px;
-    height: 400px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     box-shadow: inset 4px 4px 5px rgb(57, 57, 57); 
+    gap:2px;
+    box-shadow: inset 4px 4px 5px rgb(57, 57, 57); 
+    margin-top: -50px;
 }
 .operations-btn.tint {
     background-color: rgb(0, 148, 148);
@@ -154,3 +170,18 @@
 .operations-btn.bluetint:active {
      box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
+.num-btn:active {
+    box-shadow: inset 2px 2px 5px rgba(24, 24, 24, 0.5); 
+}
+.upperoperations-btn.tint:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+.operations-btn.tint:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
