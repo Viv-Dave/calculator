@@ -2,6 +2,60 @@
 .body {
     font-family: "VT323", monospace;
 }
+/* Container */
+.calculator-div { 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.calculator-background {
+    background-color: rgb(31, 31, 31); /* Example background color */
+    padding: 10px;
+    border-radius: 10px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+    box-shadow: inset 4px 4px 5px rgb(57, 57, 57); 
+    margin-top: -50px;
+}
+.horizontal-container {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 190px;
+    height: 190px;
+    gap: 5px;
+    margin-right: 5px;
+}
+.vertical-div {
+    height: 190px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.operations-container {
+    height: 190px;
+    width: 250px;
+    display: flex;
+    margin-top: 5px;
+}
+/* Screens and the icons present(+,-,etc) */
 .screen {
     background-color: rgb(246, 72, 246);
     width: 250px;
@@ -34,6 +88,7 @@
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
 }
+/* Buttons */
 .clearbutton {
     height: 50px;
     width: 120px;
@@ -56,45 +111,6 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     caret-color: transparent;
 }
-.horizontal-container {
-    height: 50px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 5px;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    width: 190px;
-    height: 190px;
-    gap: 5px;
-    margin-right: 5px;
-}
-.my-div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    caret-color: transparent;
-}
-.vertical-div {
-    height: 190px;
-    width: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.operations-container {
-    height: 190px;
-    width: 250px;
-    display: flex;
-    margin-top: 5px;
-}
 .operations-btn {
     height: 48px;
     width: 60px;
@@ -116,30 +132,11 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     caret-color: transparent;
 }
+/* Effects for buttons */
 .num-btn:hover {
     background-color:  rgb(41, 41, 41);
 }
-.calculator-div { 
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-.calculator-background {
-    background-color: rgb(31, 31, 31); /* Example background color */
-    padding: 10px;
-    border-radius: 10px;
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:2px;
-    box-shadow: inset 4px 4px 5px rgb(57, 57, 57); 
-    margin-top: -50px;
-}
+
 .operations-btn.tint {
     background-color: rgb(0, 148, 148);
 }
