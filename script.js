@@ -111,10 +111,17 @@ divbtn.addEventListener('click',function() {
 decimalbtn.addEventListener('click', function() {
     addDecimal();
 });
+delbtn.addEventListener('click', function() {
+    deleteLastCharacter();
+});
 
 resultbtn.addEventListener('click', function() {
     let result = operation(a, b);
-    screen.textContent = result.toFixed(5);
+    if (result === "Value Error") {
+        screen.textContent = result;
+    } else {
+        screen.textContent = result.toFixed(5);
+    }
     add_icon.style.color = "";
     sub_icon.style.color = "";
     pro_icon.style.color = "";
@@ -135,11 +142,11 @@ function operation(a, b) {
         case 'x':
             return a*b;
         case '/':
-            if (b == 0) {
+            if (b === 0) {
                 return "Value Error";
             }
             else {
-                answer = (a/b).toFixed(5);
+                answer = a/b;
                 return answer;
             }
         default:
@@ -193,4 +200,13 @@ function addDecimal() {
 // Function to set the operator
 function setOperator(op) {
     operatorz = op;
+}
+function deleteLastCharacter() {
+    if (operatorz === '') {
+        a = String(a).slice(0, -1);
+        screen.textContent = a;
+    } else {
+        b = String(b).slice(0, -1);
+        screen.textContent = b;
+    }
 }
